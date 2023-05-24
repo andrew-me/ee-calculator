@@ -1,0 +1,91 @@
+.app {
+  padding: 5px;
+}
+
+@media screen and (min-width: 400px) {
+  .app {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+}
+
+.calculator {
+  width: 100%;
+  max-width: 365px;
+  background: #1795d4;
+}
+
+.logo {
+  width: 200px;
+}
+
+.main {
+  padding: 0 30px 30px 30px;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  border: 5px solid white;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+.button {
+  background: white;
+  width: 72px;
+  height: 72px;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: auto;
+}
+
+.columns {
+  display: flex;
+}
+
+.col2 {
+  width: 75px;
+}
+
+.reset .button {
+  background: #dddddd;
+  margin-bottom: 5px;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+}
+
+.numbers .button {
+  margin-bottom: 5px;
+}
+
+.operators {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.operators .button {
+  background: yellow;
+  margin-bottom: 5px;
+}
+
+.operators .button[aria-pressed="true"] {
+  background: #dddddd;
+}
